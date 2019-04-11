@@ -5,6 +5,7 @@ class Genre
      @name = name
      @@all << self
      @songs = []
+     @artists = []
    end
 
    def self.all
@@ -16,7 +17,7 @@ class Genre
    end
 
    def artists
-     artist = @songs.map {|song| song.artist}
-     artist
+     @songs.map {|song| song.artist}
+
    end
 end
