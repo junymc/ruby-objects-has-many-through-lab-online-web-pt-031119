@@ -17,7 +17,7 @@ class Genre
    end
 
    def artists
-     @artists << @@all.map {|song| song.artist}
+     @artists << @@all.map {|song| song.artists}
      @artists
    end
 end
